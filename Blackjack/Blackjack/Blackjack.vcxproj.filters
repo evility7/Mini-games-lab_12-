@@ -23,10 +23,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h">
+    <ClInclude Include="main.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="output_card.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Blackjack.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

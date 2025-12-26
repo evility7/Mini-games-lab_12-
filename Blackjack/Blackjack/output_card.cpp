@@ -2,6 +2,7 @@
 #include <locale>
 #include <io.h>
 #include <fcntl.h>
+#include "output_card.h"
 using namespace std;
 void outputCard(int deck[52][3], int i)
 {

@@ -127,7 +127,8 @@
     <ClCompile Include="output_card.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h" />
+    <ClInclude Include="Blackjack.h" />
+    <ClInclude Include="main.h" />
     <ClInclude Include="output_card.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

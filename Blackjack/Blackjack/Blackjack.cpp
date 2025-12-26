@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include <ctime>
 #include <iomanip>
-#include "Header.h"
+#include "main.h"
 
 int putCard(); //набор карты
 bool doCheck(int used_card[53], int card, int quantity); //проверка наличия карты в колоде
@@ -10,7 +10,7 @@ int defineWinner(int user_points, int dealer_points, int main_points); //опр�
 
 using namespace std;
 
-int main()
+int blackjack()
 {
     setlocale(LC_CTYPE, "Russian");
     srand((unsigned)time(NULL));
@@ -283,6 +283,7 @@ int main()
     system("cls");
     cout << "Вы завершили игровую сессию\n";
     cout << "Полученные токены: " << main_points << endl;
+    return 0;
 }
 
 int putCard()
