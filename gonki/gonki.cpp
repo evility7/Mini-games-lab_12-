@@ -3,17 +3,20 @@
 #include <windows.h>
 #include <cstdlib>
 #include <conio.h>
+#include <io.h> 
+#include <fcntl.h>
+#include "main.h"
 using namespace std;
 
 void rules();
-
-int main() {
+int Races() {
     setlocale(LC_CTYPE, "Russian");
     const int H = 15;
     const int L = 20;
-    int driver;
+    int driver = 0;
     int difficulty[H];
-    int score;
+    int score = 0;
+    int point = 0;
 
     srand(time(0));
 
@@ -56,14 +59,14 @@ int main() {
                 //УПРАВЛЕНИЕ
                 if (_kbhit()) {
                     char control = _getch();
-                    if ((control == 'a' || control == 'A') && driver > 0) {
+                    if (control == 75 && driver > 0) {
                         driver--;
                     }
-                    if ((control == 'd' || control == 'D') && driver < L - 1) {
+                    if (control == 77 && driver < L - 1) {
                         driver++;
                     }
                 }
-
+       
                 //ЛОГИКА
                 for (int j = H - 1; j > 0; j--) {
                     difficulty[j] = difficulty[j - 1]; 
@@ -81,12 +84,14 @@ int main() {
                     cout << "Ты врезался! Игра окончена :(" << endl;
                     cout << "Твой счёт: " << score << endl;
                     cout << "Нажмите любую клавишу, чтобы вернуться в меню..." << endl;
+                    point += score;
+                    cout << "Общее количество очков: " << point << endl;
                     _getch();
                     break;
                 }
 
                 score++;
-                Sleep(30);
+                Sleep(16);
             }
         }
         else if (menu == '2') {
@@ -107,8 +112,14 @@ void rules() {
     cout << "Ваша цель — избегать столкновений и набирать очки." << endl << endl;
 
     cout << "=== УПРАВЛЕНИЕ ===" << endl;
-    cout << "A или a — движение влево" << endl;
-    cout << "D или d — движение вправо" << endl;
+    _setmode(_fileno(stdout), _O_U8TEXT);
+    wcout << L"←";
+    _setmode(_fileno(stdout), _O_TEXT);
+    cout << " — движение влево" << endl;
+    _setmode(_fileno(stdout), _O_U8TEXT);
+    wcout << L"→";
+    _setmode(_fileno(stdout), _O_TEXT);
+    cout << " — движение вправо" << endl;
     cout << "Любая другая клавиша — игнорируется" << endl << endl;
 
     cout << "Нажмите любую клавишу, чтобы вернуться в меню..." << endl;
