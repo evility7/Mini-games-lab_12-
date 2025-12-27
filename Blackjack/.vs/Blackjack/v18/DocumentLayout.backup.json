@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\\u043F\u0438\\\u043E\u043F\u0438\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430\u044F 12\\Mini-games-lab_12-\\Blackjack\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A27F88F-D937-42E2-934F-460B248638CB}|Blackjack\\Blackjack.vcxproj|E:\\\u043F\u0438\\\u043E\u043F\u0438\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430\u044F 12\\Mini-games-lab_12-\\Blackjack\\Blackjack\\Blackjack.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A27F88F-D937-42E2-934F-460B248638CB}|Blackjack\\Blackjack.vcxproj|solutionrelative:Blackjack\\Blackjack.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A27F88F-D937-42E2-934F-460B248638CB}|Blackjack\\Blackjack.vcxproj|E:\\\u043F\u0438\\\u043E\u043F\u0438\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430\u044F 12\\Mini-games-lab_12-\\Blackjack\\Blackjack\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A27F88F-D937-42E2-934F-460B248638CB}|Blackjack\\Blackjack.vcxproj|solutionrelative:Blackjack\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A27F88F-D937-42E2-934F-460B248638CB}|Blackjack\\Blackjack.vcxproj|E:\\\u043F\u0438\\\u043E\u043F\u0438\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430\u044F 12\\Mini-games-lab_12-\\Blackjack\\Blackjack\\output_card.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A27F88F-D937-42E2-934F-460B248638CB}|Blackjack\\Blackjack.vcxproj|solutionrelative:Blackjack\\output_card.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A27F88F-D937-42E2-934F-460B248638CB}|Blackjack\\Blackjack.vcxproj|E:\\\u043F\u0438\\\u043E\u043F\u0438\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430\u044F 12\\Mini-games-lab_12-\\Blackjack\\Blackjack\\Header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A27F88F-D937-42E2-934F-460B248638CB}|Blackjack\\Blackjack.vcxproj|solutionrelative:Blackjack\\Header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A27F88F-D937-42E2-934F-460B248638CB}|Blackjack\\Blackjack.vcxproj|E:\\\u043F\u0438\\\u043E\u043F\u0438\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430\u044F 12\\Mini-games-lab_12-\\Blackjack\\Blackjack\\output_card.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A27F88F-D937-42E2-934F-460B248638CB}|Blackjack\\Blackjack.vcxproj|solutionrelative:Blackjack\\output_card.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A27F88F-D937-42E2-934F-460B248638CB}|Blackjack\\Blackjack.vcxproj|E:\\\u043F\u0438\\\u043E\u043F\u0438\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430\u044F 12\\Mini-games-lab_12-\\Blackjack\\Blackjack\\Blackjack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A27F88F-D937-42E2-934F-460B248638CB}|Blackjack\\Blackjack.vcxproj|solutionrelative:Blackjack\\Blackjack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "E:\\\u043F\u0438\\\u043E\u043F\u0438\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430\u044F 12\\Mini-games-lab_12-\\Blackjack\\Blackjack\\Source.cpp",
+              "RelativeDocumentMoniker": "Blackjack\\Source.cpp",
+              "ToolTip": "E:\\\u043F\u0438\\\u043E\u043F\u0438\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430\u044F 12\\Mini-games-lab_12-\\Blackjack\\Blackjack\\Source.cpp",
+              "RelativeToolTip": "Blackjack\\Source.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-26T21:38:33.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Blackjack.h",
+              "DocumentMoniker": "E:\\\u043F\u0438\\\u043E\u043F\u0438\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430\u044F 12\\Mini-games-lab_12-\\Blackjack\\Blackjack\\Blackjack.h",
+              "RelativeDocumentMoniker": "Blackjack\\Blackjack.h",
+              "ToolTip": "E:\\\u043F\u0438\\\u043E\u043F\u0438\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430\u044F 12\\Mini-games-lab_12-\\Blackjack\\Blackjack\\Blackjack.h",
+              "RelativeToolTip": "Blackjack\\Blackjack.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-26T21:35:45.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "output_card.h",
+              "DocumentMoniker": "E:\\\u043F\u0438\\\u043E\u043F\u0438\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430\u044F 12\\Mini-games-lab_12-\\Blackjack\\Blackjack\\output_card.h",
+              "RelativeDocumentMoniker": "Blackjack\\output_card.h",
+              "ToolTip": "E:\\\u043F\u0438\\\u043E\u043F\u0438\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430\u044F 12\\Mini-games-lab_12-\\Blackjack\\Blackjack\\output_card.h",
+              "RelativeToolTip": "Blackjack\\output_card.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-26T21:35:11.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Header.h",
+              "DocumentMoniker": "E:\\\u043F\u0438\\\u043E\u043F\u0438\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430\u044F 12\\Mini-games-lab_12-\\Blackjack\\Blackjack\\Header.h",
+              "RelativeDocumentMoniker": "Blackjack\\Header.h",
+              "ToolTip": "E:\\\u043F\u0438\\\u043E\u043F\u0438\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430\u044F 12\\Mini-games-lab_12-\\Blackjack\\Blackjack\\Header.h",
+              "RelativeToolTip": "Blackjack\\Header.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-26T21:35:10.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "output_card.cpp",
+              "DocumentMoniker": "E:\\\u043F\u0438\\\u043E\u043F\u0438\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430\u044F 12\\Mini-games-lab_12-\\Blackjack\\Blackjack\\output_card.cpp",
+              "RelativeDocumentMoniker": "Blackjack\\output_card.cpp",
+              "ToolTip": "E:\\\u043F\u0438\\\u043E\u043F\u0438\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430\u044F 12\\Mini-games-lab_12-\\Blackjack\\Blackjack\\output_card.cpp",
+              "RelativeToolTip": "Blackjack\\output_card.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-22T22:15:09.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Blackjack.cpp",
+              "DocumentMoniker": "E:\\\u043F\u0438\\\u043E\u043F\u0438\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430\u044F 12\\Mini-games-lab_12-\\Blackjack\\Blackjack\\Blackjack.cpp",
+              "RelativeDocumentMoniker": "Blackjack\\Blackjack.cpp",
+              "ToolTip": "E:\\\u043F\u0438\\\u043E\u043F\u0438\\\u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430\u044F 12\\Mini-games-lab_12-\\Blackjack\\Blackjack\\Blackjack.cpp*",
+              "RelativeToolTip": "Blackjack\\Blackjack.cpp*",
+              "ViewState": "AgIAAAcBAAAAAAAAAAAlwB0BAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-22T21:21:49.71Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
