@@ -1,0 +1,29 @@
+﻿Сборка начата 24.12.2025 12:18:30.
+Уровень детализации журнала: Normal.     1>Проект "D:\ОПИ 1 курс\lab_12\Mini-games-lab_12-\game-words\game-words\game-words.vcxproj" в узле 2 (целевые объекты Build).
+     1>PrepareForBuild:
+         Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
+       InitializeBuildStatus:
+         Создание "x64\Debug\game-words.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+         Обращение к "x64\Debug\game-words.tlog\unsuccessfulbuild".
+       ClCompile:
+         D:\Visual Studio\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt "game-words.cpp"
+         game-words.cpp
+     1>D:\ОПИ 1 курс\lab_12\Mini-games-lab_12-\game-words\game-words\game-words.cpp(123,1): warning C4715: get_word: значение возвращается не при всех путях выполнения
+       Link:
+         D:\Visual Studio\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\ОПИ 1 курс\lab_12\Mini-games-lab_12-\game-words\x64\Debug\game-words.exe" /INCREMENTAL /ILK:"x64\Debug\game-words.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\ОПИ 1 курс\lab_12\Mini-games-lab_12-\game-words\x64\Debug\game-words.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\ОПИ 1 курс\lab_12\Mini-games-lab_12-\game-words\x64\Debug\game-words.lib" /MACHINE:X64 "x64\Debug\game-words.obj"
+         game-words.vcxproj -> D:\ОПИ 1 курс\lab_12\Mini-games-lab_12-\game-words\x64\Debug\game-words.exe
+       FinalizeBuildStatus:
+         Файл "x64\Debug\game-words.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "x64\Debug\game-words.tlog\game-words.lastbuildstate".
+     1>Сборка проекта "D:\ОПИ 1 курс\lab_12\Mini-games-lab_12-\game-words\game-words\game-words.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+       "D:\ОПИ 1 курс\lab_12\Mini-games-lab_12-\game-words\game-words\game-words.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект ClCompile) -> 
+         D:\ОПИ 1 курс\lab_12\Mini-games-lab_12-\game-words\game-words\game-words.cpp(123,1): warning C4715: get_word: значение возвращается не при всех путях выполнения
+
+    Предупреждений: 1
+    Ошибок: 0
+
+Прошло времени 00:00:01.35
