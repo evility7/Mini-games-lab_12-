@@ -1,5 +1,9 @@
 ﻿#include <iostream> 
 #include <windows.h>
+#include "Blackjack.h"
+#include "Hangman.h"
+#include "gonki.h"
+#include "Tic_tac_toe.h"
 using namespace std;
 
 int main() {
@@ -23,7 +27,7 @@ int main() {
             cin.ignore(10000, '\n'); //очистка буфера ввода 
             cout << "Ошибка: введён неверный символ. Введите число от 1 до 5." << endl; continue; //возвращаемся к началу цикла 
         }
-
+        system("cls");
         switch (m)
         {
         case 1:

@@ -123,7 +123,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Blackjack.cpp" />
+    <ClCompile Include="gonki.cpp" />
+    <ClCompile Include="Hangman.cpp" />
     <ClCompile Include="main_pr.cpp" />
+    <ClCompile Include="output_card.cpp" />
+    <ClCompile Include="tic-tac-game.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Blackjack.h" />
+    <ClInclude Include="gonki.h" />
+    <ClInclude Include="Hangman.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="output_card.h" />
+    <ClInclude Include="Tic_tac_toe.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
