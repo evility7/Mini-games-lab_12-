@@ -1,9 +1,7 @@
-﻿Сборка начата 27.12.2025 1:39:36.
-Уровень детализации журнала: Normal.     1>Проект "C:\Программирование\ОПИ\Лабораторные\tic - taccc\Mini-games-lab_12-\tic-tac-game\tic-tac-game.vcxproj" в узле 2 (целевые объекты Rebuild).
+﻿Сборка начата 28.12.2025 18:54:39.
+Уровень детализации журнала: Normal.     1>Проект "C:\Программирование\ОПИ\Лабораторные\tic - taccc\Mini-games-lab_12-\tic-tac-game\tic-tac-game.vcxproj" в узле 2 (целевые объекты Build).
      1>PrepareForBuild:
          Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
-         Создание каталога "C:\Программирование\ОПИ\Лабораторные\tic - taccc\Mini-games-lab_12-\tic-tac-game\x64\Release\".
-         Создание каталога "tic-tac-game\x64\Release\tic-tac-game.tlog\".
        InitializeBuildStatus:
          Создание "tic-tac-game\x64\Release\tic-tac-game.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
          Обращение к "tic-tac-game\x64\Release\tic-tac-game.tlog\unsuccessfulbuild".
@@ -12,18 +10,19 @@
          tic-tac-game.cpp
        Link:
          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Программирование\ОПИ\Лабораторные\tic - taccc\Mini-games-lab_12-\tic-tac-game\x64\Release\tic-tac-game.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Программирование\ОПИ\Лабораторные\tic - taccc\Mini-games-lab_12-\tic-tac-game\x64\Release\tic-tac-game.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /LTCGOUT:"tic-tac-game\x64\Release\tic-tac-game.iobj" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Программирование\ОПИ\Лабораторные\tic - taccc\Mini-games-lab_12-\tic-tac-game\x64\Release\tic-tac-game.lib" /MACHINE:X64 "tic-tac-game\x64\Release\tic-tac-game.obj"
-     1>MSVCRT.lib(exe_main.obj) : error LNK2001: неразрешенный внешний символ main.
-     1>C:\Программирование\ОПИ\Лабораторные\tic - taccc\Mini-games-lab_12-\tic-tac-game\x64\Release\tic-tac-game.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
-     1>Сборка проекта "C:\Программирование\ОПИ\Лабораторные\tic - taccc\Mini-games-lab_12-\tic-tac-game\tic-tac-game.vcxproj" завершена (целевые объекты Rebuild) с ошибкой.
+         Создание кода
+         1 of 29 functions ( 3.4%) were compiled, the rest were copied from previous compilation.
+           0 functions were new in current compilation
+           0 functions had inline decision re-evaluated but remain unchanged
+         Создание кода завершено
+         tic-tac-game.vcxproj -> C:\Программирование\ОПИ\Лабораторные\tic - taccc\Mini-games-lab_12-\tic-tac-game\x64\Release\tic-tac-game.exe
+       FinalizeBuildStatus:
+         Файл "tic-tac-game\x64\Release\tic-tac-game.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "tic-tac-game\x64\Release\tic-tac-game.tlog\tic-tac-game.lastbuildstate".
+     1>Сборка проекта "C:\Программирование\ОПИ\Лабораторные\tic - taccc\Mini-games-lab_12-\tic-tac-game\tic-tac-game.vcxproj" завершена (целевые объекты Build).
 
-Ошибка сборки.
-
-       "C:\Программирование\ОПИ\Лабораторные\tic - taccc\Mini-games-lab_12-\tic-tac-game\tic-tac-game.vcxproj" (целевой объект Rebuild ) (1) ->
-       (Целевой объект Link) -> 
-         MSVCRT.lib(exe_main.obj) : error LNK2001: неразрешенный внешний символ main.
-         C:\Программирование\ОПИ\Лабораторные\tic - taccc\Mini-games-lab_12-\tic-tac-game\x64\Release\tic-tac-game.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
-
+Сборка успешно завершена.
     Предупреждений: 0
-    Ошибок: 2
+    Ошибок: 0
 
-Прошло времени 00:00:00.57
+Прошло времени 00:00:00.54
