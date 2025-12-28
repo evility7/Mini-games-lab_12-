@@ -1,9 +1,15 @@
-﻿#include <iostream> 
+﻿#include <iostream>
 #include <windows.h>
+#include <iomanip>
 #include "Blackjack.h"
 #include "Hangman.h"
 #include "gonki.h"
 #include "Tic_tac_toe.h"
+
+void setColor(int color) {
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
+}
+
 using namespace std;
 
 int main() {
@@ -12,59 +18,72 @@ int main() {
     SetConsoleCP(1251);
 
     int m = 0, score = 0;
-    cout << "\t\t\t\t Добро пожаловать в сборник мини-игр!\n";
-    cout << setw(119) << setfill('-') << "" << endl;
-    cout << "\nДля перехода в главное меню нажмите Enter...";
+
+    // Приветствие
+    setColor(11); // голубой
+    cout << "\n===============================================================\n";
+    cout << "\t\t Добро пожаловать в сборник мини-игр!\n";
+    cout << "===============================================================\n\n";
+    setColor(7); // стандартный серый
+    cout << "Для перехода в главное меню нажмите Enter...";
     cin.get();
     system("cls");
-    while (m != 5) {
-        cout << setw(100) << setfill(' ') << "Очки: " << score << endl;
-        cout << "Выберите игру из представленного списка:" << endl;
-        cout << "\t\t\t\t Игры на очки\n";
-        cout << "1 – Hangman - Виселица " << endl;
-        cout << "2 – Blackjack " << endl;
-        cout << "3 – Races (гонки)" << endl;
-        cout << "\t\t\t\t Игры на двоих\n";
-        cout << "4 – Tic-tac-toe - крестики-нолики " << endl;
-        cout << "\t\t\t\t Выход\n";
-        cout << "5 – Окончание программы, выход из меню выбора игр " << endl;
 
+    while (m != 5) {
+        setColor(14); // жёлтый
+        cout << setw(100) << setfill(' ') << "Очки: " << score << endl;
+        cout << "---------------------------------------------------------------\n";
+        setColor(10); // зелёный
+        cout << "Выберите игру из представленного списка:\n\n";
+
+        setColor(11); // голубой
+        cout << "\t\t Игры на очки\n";
+        setColor(7);
+        cout << "1 – Hangman (Виселица)\n";
+        cout << "2 – Blackjack\n";
+        cout << "3 – Races (Гонки)\n\n";
+
+        setColor(13); // розовый
+        cout << "\t\t Игры на двоих\n";
+        setColor(7);
+        cout << "4 – Tic-tac-toe (Крестики-нолики)\n\n";
+
+        setColor(12); // красный
+        cout << "\t\t Выход\n";
+        setColor(7);
+        cout << "5 – Завершение программы\n";
+        setColor(14);
+        cout << "---------------------------------------------------------------\n";
+        setColor(7);
+        // Проверка ввода
         if (!(cin >> m)) {
-            cin.clear();  //сброс состояния потока (ошибка) 
-            cin.ignore(10000, '\n'); //очистка буфера ввода 
-            cout << "Ошибка: введён неверный символ. Введите число от 1 до 5." << endl; continue; //возвращаемся к началу цикла 
+            cin.clear();
+            cin.ignore(10000, '\n');
+            setColor(12);
+            cout << "Ошибка: введён неверный символ. Введите число от 1 до 5.\n";
+            setColor(7);
+            continue;
         }
         system("cls");
-        switch (m)
-        {
-        case 1:
 
-            score += Hangman();
-
+        // Обработка выбора
+        switch (m) {
+        case 1: score += Hangman(); break;
+        case 2: score += Blackjack(); break;
+        case 3: score += Races(); break;
+        case 4: Tic_tac_toe(); break;
+        case 5:
+            setColor(11);
+            cout << "Выход из программы... Спасибо за внимание!\n";
+            setColor(7);
             break;
-
-        case 2:
-            score += Blackjack();
-
-            break;
-
-        case 3:
-
-            score += Races();
-
-            break;
-
-        case 4:
-           Tic_tac_toe();
-
-            break;
-
-        case 5: cout << "Выход из программы... Спасибо за внимание!" << endl;
-            break;
-
-        default: cout << "Ошибка: такого пункта меню нет. Введите число от 1 до 5." << endl;
+        default:
+            setColor(12);
+            cout << "Ошибка: такого пункта меню нет. Введите число от 1 до 5.\n";
+            setColor(7);
             break;
         }
     }
     return 0;
 }
+
