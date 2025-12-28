@@ -326,7 +326,7 @@ int defineWinner(int user_points, int dealer_points, int main_points)
     else
         if (user_points == 21 && dealer_points != 21)
         {
-            cout << "Blackjack! Вам начисленно 2 токена!\n";
+            cout << "Blackjack! Вам начислено 2 токена!\n";
             main_points += 2;
         }
         else
