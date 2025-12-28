@@ -70,6 +70,7 @@ int Blackjack()
             cout << setw(119) << setfill('-') << "" << endl;
             cout << "Нажмите Enter для начала игры";
             cin.get();
+            cin.get();
             for (int i = 0; i < 11; i++)
                 cout << "\033[A\33[2K";
         }
@@ -108,7 +109,7 @@ int Blackjack()
             user_points = countPoints(point_card, user_points);
         }
         //вывод карты
-        cout << "Карты диллера: " << setw(100) << setfill(' ') << "Токены: " << main_points << endl;
+        cout << "Карты дилера: " << setw(100) << setfill(' ') << "Токены: " << main_points << endl;
         for (int i = 0; i <= dealer - 1; i++)
             if (i == 0) outputCard(deck, dealer_cards[i]);
             else cout << " *";
@@ -283,7 +284,11 @@ int Blackjack()
     system("cls");
     cout << "Вы завершили игровую сессию\n";
     cout << "Полученные токены: " << main_points << endl;
-    return 0;
+    cout << "Полученные очки: " << main_points * 10<< endl;
+    cout << "\nДля перехода в главное меню нажмите Enter...";
+    cin.get();
+    system("cls");
+    return main_points * 10;
 }
 
 int putCard()
@@ -346,6 +351,5 @@ int defineWinner(int user_points, int dealer_points, int main_points)
                         cout << "Поздравляем, вы победили! Вам начислен 1 токен!\n";
                         main_points++;
                     }
-    system("cls");
     return main_points;
 }

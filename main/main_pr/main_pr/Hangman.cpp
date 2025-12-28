@@ -147,12 +147,16 @@ void print_used(const string letters[], int lcount, const string words[], int wc
     cout << "\n";
 }
 
-void Hangman() {
+int Hangman() {
     srand(static_cast<unsigned int>(time(nullptr)));
-    cout << "Привет, давай сыграем в виселицу!\n\n";
-    cout << "Правила: " << endl;
-    cout << "- Угадай слово по буквам или целиком за 6 попыток\n\n";
-    cout << "Нажмите Enter для начала:" << endl;
+    cin.get();
+    cout << "\t\t\t\t Добро пожаловать в игру Виселица!\n"; 
+    cout << setw(119) << setfill('-') << "" << endl; 
+    cout << "Правила:\n"; 
+    cout << " => Угадай слово по буквам или целиком за 6 попыток.\n"; 
+    cout << " => Допускаются только русские буквы.\n"; 
+    cout << setw(119) << setfill('-') << "" << endl; 
+    cout << "Нажмите Enter для начала игры"; 
     cin.get();
     system("cls");
     int score = 0;
@@ -185,6 +189,7 @@ void Hangman() {
             // проверка на кириллицу (CP1251)
             if (!isRussianCP1251(guess)) {
                 cout << "Ошибка: допускаются только русские буквы.\n";
+                cout << setw(119) << setfill('-') << "" << endl;
                 continue;
             }
 
@@ -194,6 +199,7 @@ void Hangman() {
                 // проверка на повтор буквы
                 if (in_array(used_letters, used_letters_count, guess)) {
                     cout << "Эта буква уже была. Введите новую.\n";
+                    cout << setw(119) << setfill('-') << "" << endl;
                     continue;
                 }
                 // добавить в список использованных букв
@@ -261,14 +267,14 @@ void Hangman() {
                     }
                 }
             }
-            cout << "--------------------------------------------------\n";
+            cout << setw(119) << setfill('-') << "" << endl;
         }
 
-        cout << "--------------------------------------------------\n";
+        cout << setw(119) << setfill('-') << "" << endl;
         if (completion == word) {
-            score += 5;
+            score += 50;
             cout << "Поздравляю, вы победили! Загаданное слово: " << word << "\n";
-            cout << "Общее количество очков: " << score << "\n";
+            cout << "Вам начислено 50 очков!\n";
         }
         else {
             cout << "К сожалению, вы проиграли.\n";
@@ -277,26 +283,31 @@ void Hangman() {
         }
 
         while (true) {
-            cout << "Сыграть ещё раз? (0 - да / 1 - нет): ";
+            cout << setw(119) << setfill('-') << "" << endl;
+            cout << "Для новой игры нажмите 1, для выхода - 2\n";
             string again;
             cin >> again;
 
             // проверка на допустимый ввод
-            if (again == "0") {
+            if (again == "1") {
                 system("cls");
                 break; // выходим из цикла проверки и продолжаем игру
             }
-            else if (again == "1") {
+            else if (again == "2") {
                 system("cls");
-                cout << "Общее количество очков: " << score << "\n";
-                cout << "До новых встреч! \n";
-                return; // завершаем функцию play()
+                cout << "Вы завершили игровую сессию\n";
+                cout << "Полученные очки: " << score << endl;
+                cout << "\nДля перехода в главное меню нажмите Enter...";
+                cin.get();
+                cin.get();
+                system("cls");
+                return score; // завершаем функцию play()
             }
             else {
                 cout << "Ошибка ввода. Введите 0 (да) или 1 (нет).\n";
+                system("cls");
                 continue; // повторить запрос
             }
         }
     }
-    system("cls");
 }

@@ -86,7 +86,8 @@ int Races() {
                     cout << "Нажмите любую клавишу, чтобы вернуться в меню..." << endl;
                     point += score;
                     cout << "Общее количество очков: " << point << endl;
-                    _getch();
+                    cin.get();
+                    cin.get();
                     break;
                 }
 
@@ -98,10 +99,15 @@ int Races() {
             rules();
         }
         else if (menu == '3') {
-            return 0;
+            system("cls");
+            cout << "Вы завершили игровую сессию\n";
+            cout << "Полученные очки: " << point << endl;
+            cout << "\nДля перехода в главное меню нажмите Enter...";
+            cin.get();
+            system("cls");
+            return point;
         }
     }
-    system("cls");
 }
 
 //ПРАВИЛА ИГРЫ
