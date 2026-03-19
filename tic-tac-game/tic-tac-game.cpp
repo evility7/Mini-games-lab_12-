@@ -1,4 +1,5 @@
 ﻿#include "Tic_tac_toe.h"
+#include "Windows.h"
 using namespace std;
 
 char board[3][3] = { {'1','2','3'}, {'4','5','6'}, {'7','8','9'} };
@@ -7,29 +8,51 @@ char player;
 int count1 = 0;
 int count2 = 0;
 
+void setColor(int color) {
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
+}
+
 void drawBoard()
 {
-	system("cls"); //очищение поля при каждом вводе
-	cout << "---------------------" << endl;
-	cout << "Игра крестики-нолики: \n";
-	cout << "---------------------" << endl << endl;
-	for (int i = 0; i < 3; i++)
-	{
-		for (int j = 0; j < 3; j++)
-		{
-			cout << " " << board[i][j] << " ";
-			if (j < 2)
-			{
-				cout << "|";
-			}
-		}
-		if (i < 2)
-		{
-			cout << "\n---|---|---\n";
-		}
-	}
-	cout << "\n\n";
+    system("cls");
+
+    cout << "---------------------" << endl;
+    cout << "Игра крестики-нолики: \n";
+    cout << "---------------------" << endl << endl;
+
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            char c = board[i][j];
+
+            cout << " ";
+
+            if (c == 'X') {
+                setColor(12);   // красный
+                cout << 'X';
+                setColor(7);    // сброс
+            }
+            else if (c == 'O') {
+                setColor(11);   // голубой
+                cout << 'O';
+                setColor(7);    // сброс
+            }
+            else {
+                cout << c;      // цифры без цвета
+            }
+
+            cout << " ";
+
+            if (j < 2) cout << "|";
+        }
+
+        if (i < 2) cout << "\n---|---|---\n";
+    }
+
+    cout << "\n\n";
 }
+
 
 //проверка не занята ли строка и куда вставлять символы
 bool placeMarker(int slot)
@@ -45,7 +68,7 @@ bool placeMarker(int slot)
 	return false;
 }
 
-//проверка выйгрыша
+//проверка выигрыша
 int winner()
 {
 	for (int i = 0; i < 3; i++)

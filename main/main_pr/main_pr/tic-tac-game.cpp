@@ -8,29 +8,49 @@ char player;
 int count1 = 0;
 int count2 = 0;
 
+void setColor(int color);
+
 void drawBoard()
 {
-	system("cls"); //очищение поля при каждом вводе
-	cout << setfill('-') << setw(119) << '\n';
+	system("cls");
+
+	cout << "---------------------" << endl;
 	cout << "Игра крестики-нолики: \n";
-	cout << setfill('-') << setw(120) << '\n' << '\n';
+	cout << "---------------------" << endl << endl;
+
 	for (int i = 0; i < 3; i++)
 	{
 		for (int j = 0; j < 3; j++)
 		{
-			cout << " " << board[i][j] << " ";
-			if (j < 2)
-			{
-				cout << "|";
+			char c = board[i][j];
+
+			cout << " ";
+
+			if (c == 'X') {
+				setColor(12);   // красный
+				cout << 'X';
+				setColor(7);    // сброс
 			}
+			else if (c == 'O') {
+				setColor(9);   // синий
+				cout << 'O';
+				setColor(7);    // сброс
+			}
+			else {
+				cout << c;      // цифры без цвета
+			}
+
+			cout << " ";
+
+			if (j < 2) cout << "|";
 		}
-		if (i < 2)
-		{
-			cout << "\n---|---|---\n";
-		}
+
+		if (i < 2) cout << "\n---|---|---\n";
 	}
+
 	cout << "\n\n";
 }
+
 
 //проверка не занята ли строка и куда вставлять символы
 bool placeMarker(int slot)
